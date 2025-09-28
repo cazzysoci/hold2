@@ -594,13 +594,42 @@ crypto.constants.SSL_OP_SINGLE_ECDH_USE |
  headers[":method"] = "POST";
  headers[":path"] = parsedTarget.path;
  headers[":scheme"] = "https";
- headers["accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8";
- headers["accept-language"] = "es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3";
- headers["accept-encoding"] = "gzip, deflate, br";
+ headers["accept"] =   "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8", 
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", 
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", 
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                       'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9,application/json",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9,application/json,application/xml",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9,application/json,application/xml,application/xhtml+xml",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9,application/json,application/xml,application/xhtml+xml,text/css",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9,application/json,application/xml,application/xhtml+xml,text/css,text/javascript",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9,application/json,application/xml,application/xhtml+xml,text/css,text/javascript,application/javascript",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml,text/css",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml,text/css,text/javascript",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml,text/css,text/javascript,application/javascript",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml,text/css,text/javascript,application/javascript,application/xml-dtd",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml,text/css,text/javascript,application/javascript,application/xml-dtd,text/csv",
+                       "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/x-www-form-urlencoded,text/plain,application/json,application/xml,application/xhtml+xml,text/css,text/javascript,application/javascript,application/xml-dtd,text/csv,application/vnd.ms-excel";
+ headers["accept-language"] = "es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3", "en-US,en;q=0.9", "nl;q=0.8,zh-CN;q=0.7", "zh;q=0.6,pt-BR;q=0.5", "pt;q=0.4,lv;q=0.3", "ja;q=0.2,id;q=0.1", "es;q=0.1,th;q=0.1", "hu;q=0.1,da;q=0.1", "fr;q=0.1", "tr;q=0.1", "it;q=0.1", "ms;q=0.1,hi;q=0.1", "zh-TW;q=0.1", "ru;q=0.1,uk;q=0.1", "sv;q=0.1,ko;q=0.1";
+ headers["accept-encoding"] = "gzip, deflate, br", "gzip, deflate, br, zstd", "gzip"; 
  headers["x-forwarded-proto"] = "https";
- headers["cache-control"] = "no-cache, no-store,private, max-age=0, must-revalidate";
- headers["sec-ch-ua-mobile"] = randomElement(["?0", "?1"]);
- headers["sec-ch-ua-platform"] = randomElement(["Android", "iOS", "Linux", "macOS", "Windows"]);
+ headers["x-forwarded-proto"] = "http";
+ headers["cache-control"] = "no-cache, no-store,private, max-age=0, must-revalidate", "public, max-age=7200"; 
+ headers["sec-ch-ua-mobile"] = randomElement(["?0", "?1", "117.0.5408.197", "19.0.0", "Android", "Chrome OS", "Chromium OS", "iOS", "Linux", "macOS", "Unknown", "Windows"]);
+ headers["sec-ch-ua-platform"] = randomElement(["Android", "iOS", "Linux", "macOS", "Windows", "Chrome", "Edge", "Microsoft Edge", "Google Chrome", "Firefox", "Safari", "Opera", "Chrome Android", "Samsung Internet", "WebView Android"]);
  headers["sec-fetch-dest"] = "document";
  headers["sec-fetch-mode"] = "navigate";
  headers["sec-fetch-site"] = "same-origin";
